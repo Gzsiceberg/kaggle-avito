@@ -5,9 +5,7 @@
 #include <cmath>
 #include "common.hpp"
 #include "timer.h"
-#include <tbb/concurrent_hash_map.h>
 #include <omp.h>
-#include <tbb/atomic.h>
 #include <boost/functional/hash.hpp>
 #include <exception>
 #include "model.pb.h"
