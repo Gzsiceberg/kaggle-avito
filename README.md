@@ -35,17 +35,21 @@
   
 - Compile the C++ code by 
   
-- ``` sh
+  ``` 
   cd IceLR
   scons
   ```
+  
 - run script to generate data and basic models
   
-- ``` sh
+  ``` sh
   bash run.sh
   ```
+  
 - generate final submission by 
   
-- ``` python
+  ``` python
   pypy run.py --type ensemble --method nn > nn_log.log
   ```
+  
+  ​
