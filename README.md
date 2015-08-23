@@ -39,17 +39,13 @@
   cd IceLR
   scons
   ```
-  
 - run script to generate data and basic models
   
 - ``` sh
   bash run.sh
   ```
-  
 - generate final submission by 
   
 - ``` python
   pypy run.py --type ensemble --method nn > nn_log.log
   ```
-  
-  ​
