@@ -15,9 +15,7 @@
 #include "model.pb.h"
 #include <fstream>
 #include <memory> 
-#include "hash_filter.hpp"
 #include "auc.hpp"
-#include "random.hpp"
 #include <pmmintrin.h>
 
 DECLARE_int32(passes);
