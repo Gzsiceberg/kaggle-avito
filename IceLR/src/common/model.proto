@@ -1,0 +1,36 @@
+message MetaPar
+{
+    required float l1 = 1;
+    required float l2 = 2;
+    required float alpha = 3;
+    required float beta = 4;
+    required uint32 D = 5;
+    required int32 multi_cls = 6;
+    repeated uint32 quad = 7 [packed=true];
+    repeated uint32 cubic = 8 [packed=true];
+}
+
+message FTRLProxiamlPar
+{
+    required float z = 1;
+    required float n = 2;
+    required uint32 x = 3;
+    required int32 index = 4;
+}
+
+message FFMParameterPar
+{
+    repeated uint32 wv = 1 [packed=true];
+    repeated uint32 sgv = 2 [packed=true];
+}
+
+message Instance
+{
+    required float y = 1;
+    repeated uint32 x = 2 [packed=true];
+}
+
+message MetaProb
+{
+    required uint32 prob_size = 1;
+}

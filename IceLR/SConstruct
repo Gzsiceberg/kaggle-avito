@@ -1,0 +1,15 @@
+libs = ['gflags', 'protobuf',]
+cpp_path = ["src/common", "src/linear_model", "src/fm_model"]
+cxx_flags = "-std=c++11 -O2 -g -fopenmp "
+lib_path = []
+env = Environment(CXX="g++",
+                  CXXFLAGS=cxx_flags,
+                  LINKFLAGS=cxx_flags,
+                  LIBPATH=lib_path,
+                  CPPPATH=cpp_path,
+                  LIBS=libs,
+                  )
+sources = [Glob('src/common/*.cc'),
+            Glob('src/common/*.cpp'),]
+env.Program("ffm", sources + ["src/ffm.cpp"])
+env.Program("fm", sources + ["src/fm.cpp"])
